@@ -30,7 +30,7 @@ setup:
 
 .PHONY: makemigrations ## Run makemigrations
 makemigrations:
-	-${VENV_PY_PATH} ${NETBOX_MANAGE_PATH}/manage.py makemigrations --name ${PLUGIN_NAME}
+	-${VENV_PY_PATH} ${NETBOX_MANAGE_PATH}/manage.py makemigrations
 
 .PHONY: migrate ## Run migrate
 migrate:
